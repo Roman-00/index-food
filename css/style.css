@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+    --light-grey: rgba(238, 238, 238, 0.71);
+    --primary: #000000;
+    --dark-orange: #f66a15;
+    --yellow: #ffaf19;
+    --radius: 50%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--primary);
+}
+
+.container {
+    max-width: 1194px;
+    margin: auto;
+}
+
+.header {
+    position: relative;
+    padding: 10px 0;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.search-form {
+    position: relative;
+    display: flex;
+    flex-grow: 1;
+    max-width: 620px;
+    margin-left: 76px;
+    background: var(--light-grey);
+    border-radius: 10px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 13px 20px;
+    background: transparent;
+    border: none;
+}
+
+.search-input::placeholder {
+    font-size: 16px;
+    line-height: 23px;
+    color: #57565b;
+}
+
+.search-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    padding: 0 18px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.auth {
+    margin-left: auto;
+}
+
+.login {
+    display: block;
+    padding: 16px 30px;
+    line-height: 16px;
+    background: #ebebeb;
+    border-radius: 50px;
+    text-decoration: none;
+    color: var(--primary);
+}
+
+.shopping-cart {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 49px;
+    height: 49px;
+    margin-left: 30px;
+    background: var(--dark-orange);
+    border-radius: var(--radius);
+}
+
+.shopping-counter {
+    position: absolute;
+    right: -2px;
+    bottom: -4px;
+    display: block;
+    padding: 5px;
+    font-size: 8px;
+    line-height: 9px;
+    background: var(--yellow);
+    border-radius: var(--radius);
+    color: var(--primary);
+}
